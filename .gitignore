@@ -1,0 +1,12 @@
+# Ignore data files
+*.gpkg
+*.csv
+*.geojson
+*.zip
+*.Rds
+
+# R specific
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
