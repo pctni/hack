@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Data-Driven Transport Planning"
+  site-url: "https://pctni.github.io/hack/"
   navbar:
     left:
       - href: index.qmd
