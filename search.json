@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "prerequisites.html",
+    "href": "prerequisites.html",
+    "title": "Prerequisites",
+    "section": "",
+    "text": "To make the most of the hackathon, please complete these steps before we begin at 14:00 on Monday 18th May."
+  },
+  {
+    "objectID": "prerequisites.html#create-a-github-account",
+    "href": "prerequisites.html#create-a-github-account",
+    "title": "Prerequisites",
+    "section": "1. Create a GitHub Account",
+    "text": "1. Create a GitHub Account\nIf you don’t have one already, sign up at github.com. You will use this to share your code and presentations."
+  },
+  {
+    "objectID": "prerequisites.html#technical-setup",
+    "href": "prerequisites.html#technical-setup",
+    "title": "Prerequisites",
+    "section": "2. Technical Setup",
+    "text": "2. Technical Setup\nWe recommend one of the following setups:\n\nOption A: Local R Environment (Recommended for spatial analysis)\n\nR: Download R\nRStudio: Download RStudio Desktop\nKey Packages: Run the following in your R console:\ninstall.packages(c(\"sf\", \"tidyverse\", \"tmap\", \"stplanr\", \"od\"))\n\n\n\nOption B: Local Python Environment\n\nPython 3.10+\nKey Libraries:\npip install geopandas pandas matplotlib leafmap osmnx\n\n\n\nOption C: Cloud-Based (No installation required)\n\nGitHub Codespaces: We will provide a template repository that you can launch in your browser.\nPosit Cloud: Great for R users who don’t want to install software locally."
+  },
+  {
+    "objectID": "prerequisites.html#data-access",
+    "href": "prerequisites.html#data-access",
+    "title": "Prerequisites",
+    "section": "3. Data Access",
+    "text": "3. Data Access\nYou can preview and download the core datasets from the PCTNI project repository.\nSpecifically, try downloading: - zones_sdz.gpkg - od_ni_open_filtered.csv"
+  },
+  {
+    "objectID": "prerequisites.html#familiarise-yourself",
+    "href": "prerequisites.html#familiarise-yourself",
+    "title": "Prerequisites",
+    "section": "4. Familiarise Yourself",
+    "text": "4. Familiarise Yourself\nTake a look at the Propensity to Cycle Tool (PCT) and the PCTNI project to understand the types of questions we are trying to answer."
+  },
+  {
+    "objectID": "exercises/index.html",
+    "href": "exercises/index.html",
+    "title": "Exercises",
+    "section": "",
+    "text": "Follow these exercises to get familiar with the Northern Ireland (NI) spatial datasets and how to use them for transport analysis."
+  },
+  {
+    "objectID": "exercises/index.html#guided-exercises",
+    "href": "exercises/index.html#guided-exercises",
+    "title": "Exercises",
+    "section": "Guided Exercises",
+    "text": "Guided Exercises\n\n01-loading-data.R: Learn how to load Super Data Zones (SDZ) and Origin-Destination (OD) data, and join them to visualize commuting destinations.\n02-flow-analysis.R: Convert raw OD data into spatial flows (lines), calculate distances, and filter for commutable ranges.\n03-advanced.R: A starting point for routing and accessibility analysis using the PCTNI route network."
+  },
+  {
+    "objectID": "exercises/index.html#working-with-the-scripts",
+    "href": "exercises/index.html#working-with-the-scripts",
+    "title": "Exercises",
+    "section": "Working with the Scripts",
+    "text": "Working with the Scripts\nWe recommend opening these scripts in RStudio. You may need to install the following packages first:\ninstall.packages(c(\"sf\", \"tidyverse\", \"tmap\", \"stplanr\", \"od\"))"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "",
+    "text": "Welcome to the Data-Driven Transport Planning Hackathon!\nPresented by the team behind the Propensity to Cycle Tool for Northern Ireland (PCTNI), this afternoon session is an open-ended challenge to develop data analysis, visualisation, or prototype tool ideas that help make transport planning more data-driven."
+  },
+  {
+    "objectID": "index.html#the-challenge",
+    "href": "index.html#the-challenge",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "The Challenge",
+    "text": "The Challenge\nDevelop a tool, visualization, or analysis that addresses a transport planning problem. While we provide datasets from the PCTNI project, your hackathon project does not have to be focused on cycling.\nIdeas for inspiration: - High-resolution accessibility mapping. - Visualizing multimodal origin-destination flows. - Predicting the impact of new transport infrastructure. - Identifying gaps in existing data."
+  },
+  {
+    "objectID": "index.html#participation",
+    "href": "index.html#participation",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "Participation",
+    "text": "Participation\n\nWork individually or in teams.\nUse any tools or languages (R, Python, JavaScript, etc.).\nFocus on reproducibility and clear communication."
+  },
+  {
+    "objectID": "index.html#agenda-monday-18th-may",
+    "href": "index.html#agenda-monday-18th-may",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "Agenda (Monday 18th May)",
+    "text": "Agenda (Monday 18th May)\n\n\n\nTime\nActivity\n\n\n\n\n14:00 - 14:45\nGetting started with the data and challenge\n\n\n14:45 - 15:00\nBreak\n\n\n15:00 - 16:30\nHackathon Session\n\n\n16:30 - 17:00\nPresentation of results"
+  },
+  {
+    "objectID": "index.html#datasets",
+    "href": "index.html#datasets",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "Datasets",
+    "text": "Datasets\nParticipants will be given access to datasets including: - Origin-destination (OD) data for Northern Ireland. - Zone-level demographics and transport stats. - Simplified route networks.\nSee the Prerequisites page to get ready!"
+  }
+]
