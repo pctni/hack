@@ -1,0 +1,41 @@
+---
+title: "Prerequisites"
+---
+
+To make the most of the hackathon, please complete these steps before we begin at 14:00 on Monday 18th May.
+
+## 1. Create a GitHub Account
+If you don't have one already, sign up at [github.com](https://github.com). You will use this to share your code and presentations.
+
+## 2. Technical Setup
+
+We recommend one of the following setups:
+
+### Option A: Local R Environment (Recommended for spatial analysis)
+- **R**: [Download R](https://cran.r-project.org/)
+- **RStudio**: [Download RStudio Desktop](https://posit.co/download/rstudio-desktop/)
+- **Key Packages**: Run the following in your R console:
+  ```r
+  install.packages(c("sf", "tidyverse", "tmap", "stplanr", "od"))
+  ```
+
+### Option B: Local Python Environment
+- **Python 3.10+**
+- **Key Libraries**:
+  ```bash
+  pip install geopandas pandas matplotlib leafmap osmnx
+  ```
+
+### Option C: Cloud-Based (No installation required)
+- **GitHub Codespaces**: We will provide a template repository that you can launch in your browser.
+- **Posit Cloud**: Great for R users who don't want to install software locally.
+
+## 3. Data Access
+You can preview and download the core datasets from the [PCTNI project repository](https://github.com/george-oakman/pctni).
+
+Specifically, try downloading:
+- [zones_sdz.gpkg](https://github.com/george-oakman/pctni/raw/refs/heads/main/pctni/zones_sdz.gpkg)
+- [od_ni_open_filtered.csv](https://github.com/george-oakman/pctni/raw/refs/heads/main/pctni/od_ni_open_filtered.csv)
+
+## 4. Familiarise Yourself
+Take a look at the [Propensity to Cycle Tool (PCT)](https://www.pct.bike/) and the [PCTNI project](https://github.com/george-oakman/pctni) to understand the types of questions we are trying to answer.

@@ -1,0 +1,39 @@
+---
+title: "Data-Driven Transport Planning Hackathon"
+---
+
+Welcome to the **Data-Driven Transport Planning Hackathon**! 
+
+Presented by the team behind the **Propensity to Cycle Tool for Northern Ireland (PCTNI)**, this afternoon session is an open-ended challenge to develop data analysis, visualisation, or prototype tool ideas that help make transport planning more data-driven.
+
+## The Challenge
+
+Develop a tool, visualization, or analysis that addresses a transport planning problem. While we provide datasets from the PCTNI project, your hackathon project does **not** have to be focused on cycling. 
+
+**Ideas for inspiration:**
+- High-resolution accessibility mapping.
+- Visualizing multimodal origin-destination flows.
+- Predicting the impact of new transport infrastructure.
+- Identifying gaps in existing data.
+
+## Participation
+- Work individually or in teams.
+- Use any tools or languages (R, Python, JavaScript, etc.).
+- Focus on reproducibility and clear communication.
+
+## Agenda (Monday 18th May)
+
+| Time | Activity |
+|------|----------|
+| 14:00 - 14:45 | Getting started with the data and challenge |
+| 14:45 - 15:00 | Break |
+| 15:00 - 16:30 | **Hackathon Session** |
+| 16:30 - 17:00 | Presentation of results |
+
+## Datasets
+Participants will be given access to datasets including:
+- Origin-destination (OD) data for Northern Ireland.
+- Zone-level demographics and transport stats.
+- Simplified route networks.
+
+See the [Prerequisites](prerequisites.qmd) page to get ready!

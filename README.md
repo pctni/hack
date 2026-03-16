@@ -1,28 +1,18 @@
-# PCTNI Hackathon Exercises
+# Data-Driven Transport Planning Hackathon
 
-Welcome to the PCTNI Afternoon Hackathon! This session is designed to get you familiar with the Northern Ireland (NI) spatial datasets and how to use them for active travel analysis.
+This is the repository for the **Data-Driven Transport Planning Hackathon**, held on Monday 18th May.
 
-## Session Information
-- **Date**: Monday 18th May
-- **Time**: 14:00 - 17:00
-- **Location**: In-person / Online
+## Website
+The official hackathon guide and agenda are available as a website:
+[https://robinlovelace.github.io/pctni-hack/](https://robinlovelace.github.io/pctni-hack/)
 
-## Agenda
-- **14:00 - 14:15**: Introduction & Environment Setup
-- **14:15 - 15:00**: Exercise 1 - Loading and Visualizing NI Zones
-- **15:00 - 15:15**: Break
-- **15:15 - 16:15**: Exercise 2 - Origin-Destination (OD) Flow Analysis
-- **16:15 - 17:00**: Exercise 3 - Advanced: Routing & Impact Assessment
+## Repository Structure
+- `index.qmd`: Landing page for the hackathon.
+- `prerequisites.qmd`: Setup instructions for participants.
+- `exercises/`: Directory containing R scripts for guided practice.
+- `_quarto.yml`: Quarto website configuration.
 
-## Exercises
-Detailed instructions can be found in the `exercises/` directory:
-1. `01-loading-data.R`: Load `zones_sdz.gpkg` and `od_ni_open_filtered.csv`. Join them and visualize the zones using `sf` and `tmap`.
-2. `02-flow-analysis.R`: Convert OD data to straight-line flows using `od::od_to_sf`. Calculate distances and filter for commutable ranges (e.g., 2-10km).
-3. `03-advanced.R`: Use the provided `route_network_fastest.gpkg` or `osmextract` to perform network analysis for a specific local authority.
-
-## Data Download
-Datasets can be downloaded from the main PCTNI repository or using the provided links in each exercise script.
-For local use, ensure you have:
-- `zones_sdz.gpkg`
-- `od_ni_open_filtered.csv`
-- `SOA2011_simplified.geojson`
+## How to use this repository
+1.  Follow the [Prerequisites](https://robinlovelace.github.io/pctni-hack/prerequisites.html).
+2.  Clone this repository to access the example exercises.
+3.  Use the datasets provided to develop your hackathon project.

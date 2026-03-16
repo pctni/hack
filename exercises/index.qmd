@@ -1,0 +1,24 @@
+---
+title: "Exercises"
+---
+
+Follow these exercises to get familiar with the Northern Ireland (NI) spatial datasets and how to use them for transport analysis.
+
+## Guided Exercises
+
+1. [**01-loading-data.R**](https://github.com/Robinlovelace/pctni-hack/blob/main/exercises/01-loading-data.R): 
+   Learn how to load Super Data Zones (SDZ) and Origin-Destination (OD) data, and join them to visualize commuting destinations.
+
+2. [**02-flow-analysis.R**](https://github.com/Robinlovelace/pctni-hack/blob/main/exercises/02-flow-analysis.R): 
+   Convert raw OD data into spatial flows (lines), calculate distances, and filter for commutable ranges.
+
+3. [**03-advanced.R**](https://github.com/Robinlovelace/pctni-hack/blob/main/exercises/03-advanced.R): 
+   A starting point for routing and accessibility analysis using the PCTNI route network.
+
+## Working with the Scripts
+
+We recommend opening these scripts in RStudio. You may need to install the following packages first:
+
+```r
+install.packages(c("sf", "tidyverse", "tmap", "stplanr", "od"))
+```
