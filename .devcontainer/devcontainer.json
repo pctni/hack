@@ -1,0 +1,14 @@
+{
+  "name": "Data-Driven Transport Planning Hackathon",
+  "image": "ghcr.io/rocker-org/devcontainer/geospatial:4.3",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "REditorSupport.r",
+        "quarto.quarto"
+      ]
+    }
+  },
+  "postCreateCommand": "Rscript -e 'install.packages(c(\"sf\", \"tidyverse\", \"tmap\", \"stplanr\", \"od\"))'",
+  "remoteUser": "root"
+}
