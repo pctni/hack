@@ -27,7 +27,7 @@ We recommend one of the following setups:
   ```
 
 ### Option C: Cloud-Based (No installation required)
-- **GitHub Codespaces**: We will provide a template repository that you can launch in your browser.
+- **[GitHub Codespaces](https://github.com/codespaces)**: We will provide a template repository that you can launch in your browser. Note: Using Codespaces requires a **[GitHub account](https://github.com/signup)**.
 - **Posit Cloud**: Great for R users who don't want to install software locally.
 
 ## 3. Data Access
