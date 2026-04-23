@@ -1,5 +1,61 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "",
+    "text": "Welcome to the Data-Driven Transport Planning Hackathon!\nDate: Monday 18th May 2026\nTime: 14:00 – 17:00\nLocation: David Keir Building, Room 0G.533\nHosted by Robin Lovelace, Professor of Transport Data Science at the University of Leeds and part of the team behind the Propensity to Cycle Tool for Northern Ireland (PCTNI), this afternoon session is an open-ended challenge to develop data analysis, visualisation, or prototype tool ideas that help make transport planning more data-driven.\nRefreshments will be provided. Just bring yourself and your laptop!"
+  },
+  {
+    "objectID": "index.html#the-challenge",
+    "href": "index.html#the-challenge",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "The Challenge",
+    "text": "The Challenge\nDevelop a tool, visualization, or analysis that addresses a transport planning problem. While we provide datasets from the PCTNI project, your hackathon project does not have to be focused on cycling.\nIdeas for inspiration:\n\nHigh-resolution accessibility mapping.\nVisualizing multimodal origin-destination flows.\nPredicting the impact of new transport infrastructure.\nIdentifying gaps in existing data."
+  },
+  {
+    "objectID": "index.html#external-datasets",
+    "href": "index.html#external-datasets",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "External Datasets",
+    "text": "External Datasets\nSome suggestions for datasets:\nTranslink Bus Stops - Translink Bus Stop List - Dataset - Open Data NI\nPotholes (up to 2025) - Pothole Enquiries - Dataset - Open Data NI\nRailway Stations (population with a walk or drive distance) - Northern Ireland Railways Stations - Dataset - Open Data NI\nTraffic Count Data (up to 2023 but later is available) Northern Ireland Traffic Count Data - Dataset - Open Data NI\nRoad Traffic Collision Statistics – collision data can be linked to vehicle and casualty data (available 2013-2024) Police Recorded Injury Road Traffic Collision Statistics Northern Ireland 2024 - Dataset - Open Data NI\nCensus 2021 origin-destination place of work tables (UK) | Northern Ireland Statistics and Research Agency – for OD flows from 2021 census for NI – available at Census Data Zone."
+  },
+  {
+    "objectID": "index.html#pctni-hackathon-datasets",
+    "href": "index.html#pctni-hackathon-datasets",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "PCTNI Hackathon Datasets",
+    "text": "PCTNI Hackathon Datasets\nThese datasets are provided as part of the hackathon and can be downloaded from the v0.1.0 Release.\n\nGeography and Demand\n\nZones (SDZ 2021): 2021 Super Data Zones for Northern Ireland (zones_sdz.gpkg).\nOrigin-Destination (OD) Data: Filtered 2021 Census OD data for workplace destinations (od_ni_open_filtered.csv).\n\n\n\nRoute Networks\n\nFastest Route Network: Network representing the fastest routes (route_network_fastest.gpkg).\nQuietest Route Network: Network representing the quietest routes (route_network_quietest.gpkg).\nProcessed Cycle Network: A cleaned and processed version of the cycle network (cycle_net_processed.gpkg).\n\n\n\nHigh-Resolution Segments\nThe following files contain high-resolution route segments, available in both GeoPackage (.gpkg) and R Data (.Rds) formats: - Fastest Segments: Aug 2025, 18 Aug 2025, 19 Aug 2025. - Quietest Segments: Aug 2025, 18 Aug 2025, 19 Aug 2025."
+  },
+  {
+    "objectID": "index.html#registration",
+    "href": "index.html#registration",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "Registration",
+    "text": "Registration\nIf you haven’t already, please sign up for the event using the following form: Hackathon Sign-up Form"
+  },
+  {
+    "objectID": "index.html#pre-event-homework",
+    "href": "index.html#pre-event-homework",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "Pre-event homework",
+    "text": "Pre-event homework\nTo get a head start, we recommend that you try importing and visualising the Core Hackathon Datasets before the event. This will help you familiarise yourself with the data structure and ensure your technical setup is working correctly."
+  },
+  {
+    "objectID": "index.html#participation",
+    "href": "index.html#participation",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "Participation",
+    "text": "Participation\n\nWork individually or in teams.\nUse any tools or languages (R, Python, JavaScript, etc.).\nFocus on reproducibility and clear communication."
+  },
+  {
+    "objectID": "index.html#agenda-monday-18th-may",
+    "href": "index.html#agenda-monday-18th-may",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "Agenda (Monday 18th May)",
+    "text": "Agenda (Monday 18th May)\n\n\n\nTime\nActivity\n\n\n\n\n14:00 - 14:45\nGetting started with the data and challenge\n\n\n14:45 - 15:00\nBreak\n\n\n15:00 - 16:30\nHackathon Session\n\n\n16:30 - 17:00\nPresentation of results\n\n\n\nSee the Prerequisites page to get ready!"
+  },
+  {
     "objectID": "examples.html",
     "href": "examples.html",
     "title": "Examples",
@@ -40,55 +96,6 @@
     "title": "Examples",
     "section": "Route Networks",
     "text": "Route Networks\nFinally, let’s visualize a snippet of the fastest route network.\n\n# Loading a subset for faster rendering\nroute_network = read_sf(\"data/route_network_fastest.gpkg\")\nqtm(head(route_network, 1000))"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Data-Driven Transport Planning Hackathon",
-    "section": "",
-    "text": "Welcome to the Data-Driven Transport Planning Hackathon!\nPresented by the team behind the Propensity to Cycle Tool for Northern Ireland (PCTNI), this afternoon session is an open-ended challenge to develop data analysis, visualisation, or prototype tool ideas that help make transport planning more data-driven."
-  },
-  {
-    "objectID": "index.html#the-challenge",
-    "href": "index.html#the-challenge",
-    "title": "Data-Driven Transport Planning Hackathon",
-    "section": "The Challenge",
-    "text": "The Challenge\nDevelop a tool, visualization, or analysis that addresses a transport planning problem. While we provide datasets from the PCTNI project, your hackathon project does not have to be focused on cycling.\nIdeas for inspiration:\n\nHigh-resolution accessibility mapping.\nVisualizing multimodal origin-destination flows.\nPredicting the impact of new transport infrastructure.\nIdentifying gaps in existing data."
-  },
-  {
-    "objectID": "index.html#external-datasets",
-    "href": "index.html#external-datasets",
-    "title": "Data-Driven Transport Planning Hackathon",
-    "section": "External Datasets",
-    "text": "External Datasets\nSome suggestions for datasets:\nTranslink Bus Stops - Translink Bus Stop List - Dataset - Open Data NI\nPotholes (up to 2025) - Pothole Enquiries - Dataset - Open Data NI\nRailway Stations (population with a walk or drive distance) - Northern Ireland Railways Stations - Dataset - Open Data NI\nTraffic Count Data (up to 2023 but later is available) Northern Ireland Traffic Count Data - Dataset - Open Data NI\nRoad Traffic Collision Statistics – collision data can be linked to vehicle and casualty data (available 2013-2024) Police Recorded Injury Road Traffic Collision Statistics Northern Ireland 2024 - Dataset - Open Data NI\nCensus 2021 origin-destination place of work tables (UK) | Northern Ireland Statistics and Research Agency – for OD flows from 2021 census for NI – available at Census Data Zone."
-  },
-  {
-    "objectID": "index.html#pctni-hackathon-datasets",
-    "href": "index.html#pctni-hackathon-datasets",
-    "title": "Data-Driven Transport Planning Hackathon",
-    "section": "PCTNI Hackathon Datasets",
-    "text": "PCTNI Hackathon Datasets\nThese datasets are provided as part of the hackathon and can be downloaded from the v0.1.0 Release.\n\nGeography and Demand\n\nZones (SDZ 2021): 2021 Super Data Zones for Northern Ireland (zones_sdz.gpkg).\nOrigin-Destination (OD) Data: Filtered 2021 Census OD data for workplace destinations (od_ni_open_filtered.csv).\n\n\n\nRoute Networks\n\nFastest Route Network: Network representing the fastest routes (route_network_fastest.gpkg).\nQuietest Route Network: Network representing the quietest routes (route_network_quietest.gpkg).\nProcessed Cycle Network: A cleaned and processed version of the cycle network (cycle_net_processed.gpkg).\n\n\n\nHigh-Resolution Segments\nThe following files contain high-resolution route segments, available in both GeoPackage (.gpkg) and R Data (.Rds) formats: - Fastest Segments: Aug 2025, 18 Aug 2025, 19 Aug 2025. - Quietest Segments: Aug 2025, 18 Aug 2025, 19 Aug 2025."
-  },
-  {
-    "objectID": "index.html#pre-event-homework",
-    "href": "index.html#pre-event-homework",
-    "title": "Data-Driven Transport Planning Hackathon",
-    "section": "Pre-event homework",
-    "text": "Pre-event homework\nTo get a head start, we recommend that you try importing and visualising the Core Hackathon Datasets before the event. This will help you familiarise yourself with the data structure and ensure your technical setup is working correctly."
-  },
-  {
-    "objectID": "index.html#participation",
-    "href": "index.html#participation",
-    "title": "Data-Driven Transport Planning Hackathon",
-    "section": "Participation",
-    "text": "Participation\n\nWork individually or in teams.\nUse any tools or languages (R, Python, JavaScript, etc.).\nFocus on reproducibility and clear communication."
-  },
-  {
-    "objectID": "index.html#agenda-monday-18th-may",
-    "href": "index.html#agenda-monday-18th-may",
-    "title": "Data-Driven Transport Planning Hackathon",
-    "section": "Agenda (Monday 18th May)",
-    "text": "Agenda (Monday 18th May)\n\n\n\nTime\nActivity\n\n\n\n\n14:00 - 14:45\nGetting started with the data and challenge\n\n\n14:45 - 15:00\nBreak\n\n\n15:00 - 16:30\nHackathon Session\n\n\n16:30 - 17:00\nPresentation of results\n\n\n\nSee the Prerequisites page to get ready!"
   },
   {
     "objectID": "ideas.html",
@@ -154,27 +161,6 @@
     "text": "🎯 Tips for Success\n\nStart Small: Pick one core visualization or analysis and iterate.\nTell a Story: Don’t just show data – explain what it means for transport planning.\nUse the Data: Leverage the provided datasets (zones, OD flows, route networks).\nIterate Fast: Use the 90-minute session to test, refine, and improve.\nDocument Clearly: Show your code, explain your assumptions, share results reproducibly.\n\nGood luck! 🚀"
   },
   {
-    "objectID": "exercises/index.html",
-    "href": "exercises/index.html",
-    "title": "Exercises",
-    "section": "",
-    "text": "Follow these exercises to get familiar with the Northern Ireland (NI) spatial datasets and how to use them for transport analysis."
-  },
-  {
-    "objectID": "exercises/index.html#guided-exercises",
-    "href": "exercises/index.html#guided-exercises",
-    "title": "Exercises",
-    "section": "Guided Exercises",
-    "text": "Guided Exercises\n\n01-loading-data.R: Learn how to load Super Data Zones (SDZ) and Origin-Destination (OD) data, and join them to visualize commuting destinations.\n02-flow-analysis.R: Convert raw OD data into spatial flows (lines), calculate distances, and filter for commutable ranges.\n03-advanced.R: A starting point for routing and accessibility analysis using the PCTNI route network."
-  },
-  {
-    "objectID": "exercises/index.html#working-with-the-scripts",
-    "href": "exercises/index.html#working-with-the-scripts",
-    "title": "Exercises",
-    "section": "Working with the Scripts",
-    "text": "Working with the Scripts\nWe recommend opening these scripts in RStudio. You may need to install the following packages first:\ninstall.packages(c(\"sf\", \"tidyverse\", \"tmap\", \"stplanr\", \"od\"))"
-  },
-  {
     "objectID": "prerequisites.html",
     "href": "prerequisites.html",
     "title": "Prerequisites",
@@ -208,5 +194,26 @@
     "title": "Prerequisites",
     "section": "4. Familiarise Yourself",
     "text": "4. Familiarise Yourself\nTake a look at the Propensity to Cycle Tool (PCT) and the PCTNI project to understand the types of questions we are trying to answer."
+  },
+  {
+    "objectID": "exercises/index.html",
+    "href": "exercises/index.html",
+    "title": "Exercises",
+    "section": "",
+    "text": "Follow these exercises to get familiar with the Northern Ireland (NI) spatial datasets and how to use them for transport analysis."
+  },
+  {
+    "objectID": "exercises/index.html#guided-exercises",
+    "href": "exercises/index.html#guided-exercises",
+    "title": "Exercises",
+    "section": "Guided Exercises",
+    "text": "Guided Exercises\n\n01-loading-data.R: Learn how to load Super Data Zones (SDZ) and Origin-Destination (OD) data, and join them to visualize commuting destinations.\n02-flow-analysis.R: Convert raw OD data into spatial flows (lines), calculate distances, and filter for commutable ranges.\n03-advanced.R: A starting point for routing and accessibility analysis using the PCTNI route network."
+  },
+  {
+    "objectID": "exercises/index.html#working-with-the-scripts",
+    "href": "exercises/index.html#working-with-the-scripts",
+    "title": "Exercises",
+    "section": "Working with the Scripts",
+    "text": "Working with the Scripts\nWe recommend opening these scripts in RStudio. You may need to install the following packages first:\ninstall.packages(c(\"sf\", \"tidyverse\", \"tmap\", \"stplanr\", \"od\"))"
   }
 ]
