@@ -18,7 +18,7 @@
     "href": "prerequisites.html#technical-setup",
     "title": "Prerequisites",
     "section": "2. Technical Setup",
-    "text": "2. Technical Setup\nWe recommend one of the following setups:\n\nOption A: Local R Environment (Recommended for spatial analysis)\n\nR: Download R\nRStudio: Download RStudio Desktop\nKey Packages: Run the following in your R console:\ninstall.packages(c(\"sf\", \"tidyverse\", \"tmap\", \"stplanr\", \"od\"))\n\n\n\nOption B: Local Python Environment\n\nPython 3.10+\nKey Libraries:\npip install geopandas pandas matplotlib leafmap osmnx\n\n\n\nOption C: Cloud-Based (No installation required)\n\nGitHub Codespaces: We will provide a template repository that you can launch in your browser.\nPosit Cloud: Great for R users who don’t want to install software locally."
+    "text": "2. Technical Setup\nWe recommend one of the following setups:\n\nOption A: Local R Environment (Recommended for spatial analysis)\n\nR: Download R\nRStudio: Download RStudio Desktop\nKey Packages: Run the following in your R console:\ninstall.packages(c(\"sf\", \"tidyverse\", \"tmap\", \"stplanr\", \"od\"))\n\n\n\nOption B: Local Python Environment\n\nPython 3.10+\nKey Libraries:\npip install geopandas pandas matplotlib leafmap osmnx\n\n\n\nOption C: Cloud-Based (No installation required)\n\nGitHub Codespaces: We will provide a template repository that you can launch in your browser. Note: Using Codespaces requires a GitHub account.\nPosit Cloud: Great for R users who don’t want to install software locally."
   },
   {
     "objectID": "prerequisites.html#data-access",
