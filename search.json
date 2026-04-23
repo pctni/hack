@@ -1,5 +1,47 @@
 [
   {
+    "objectID": "examples.html",
+    "href": "examples.html",
+    "title": "Examples",
+    "section": "",
+    "text": "This page provides examples of how to load and visualize the hackathon datasets using R."
+  },
+  {
+    "objectID": "examples.html#setup",
+    "href": "examples.html#setup",
+    "title": "Examples",
+    "section": "Setup",
+    "text": "Setup\nFirst, load the necessary libraries:\n\nlibrary(sf)\nlibrary(tidyverse)\nlibrary(tmap)"
+  },
+  {
+    "objectID": "examples.html#loading-data",
+    "href": "examples.html#loading-data",
+    "title": "Examples",
+    "section": "Loading Data",
+    "text": "Loading Data\nWe will load the Super Data Zones (SDZ) and the filtered Origin-Destination (OD) data.\n\n# Ensure the data directory exists and contains the files\nzones = read_sf(\"data/zones_sdz.gpkg\")\nod = read_csv(\"data/od_ni_open_filtered.csv\")"
+  },
+  {
+    "objectID": "examples.html#visualizing-zones",
+    "href": "examples.html#visualizing-zones",
+    "title": "Examples",
+    "section": "Visualizing Zones",
+    "text": "Visualizing Zones\nLet’s take a look at the Super Data Zones:\n\nqtm(zones)"
+  },
+  {
+    "objectID": "examples.html#analysing-commuting-flows",
+    "href": "examples.html#analysing-commuting-flows",
+    "title": "Examples",
+    "section": "Analysing Commuting Flows",
+    "text": "Analysing Commuting Flows\nWe can join the OD data to the zones to see which areas are the most popular destinations for commuters.\n\n# Aggregate total commuters by destination zone\ndest_counts = od |&gt; \n  group_by(workplace_area_code) |&gt; \n  summarise(total_commuters = sum(count, na.rm = TRUE))\n\n# Join back to zones\nzones_joined = zones |&gt; \n  left_join(dest_counts, by = c(\"sdz2021_cd\" = \"workplace_area_code\"))\n\n# Map the results\ntm_shape(zones_joined) +\n  tm_polygons(\"total_commuters\", \n              style = \"quantile\", \n              title = \"Total Commuters (Destination)\",\n              palette = \"Viridis\") +\n  tm_layout(main.title = \"Commuting Destinations in NI\",\n            frame = FALSE)\n\n\n\n\n── tmap v3 code detected ───────────────────────────────────────────────────────\n\n\n[v3-&gt;v4] `tm_polygons()`: instead of `style = \"quantile\"`, use fill.scale =\n`tm_scale_intervals()`.\nℹ Migrate the argument(s) 'style', 'palette' (rename to 'values') to\n  'tm_scale_intervals(&lt;HERE&gt;)'\n[v3-&gt;v4] `tm_polygons()`: migrate the argument(s) related to the legend of the\nvisual variable `fill` namely 'title' to 'fill.legend = tm_legend(&lt;HERE&gt;)'\n[v3-&gt;v4] `tm_layout()`: use `tm_title()` instead of `tm_layout(main.title = )`\n[cols4all] color palettes: use palettes from the R package cols4all. Run\n`cols4all::c4a_gui()` to explore them. The old palette name \"Viridis\" is named\n\"viridis\" (in long format \"matplotlib.viridis\")"
+  },
+  {
+    "objectID": "examples.html#route-networks",
+    "href": "examples.html#route-networks",
+    "title": "Examples",
+    "section": "Route Networks",
+    "text": "Route Networks\nFinally, let’s visualize a snippet of the fastest route network.\n\n# Loading a subset for faster rendering\nroute_network = read_sf(\"data/route_network_fastest.gpkg\")\nqtm(head(route_network, 1000))"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Data-Driven Transport Planning Hackathon",
@@ -47,41 +89,6 @@
     "title": "Data-Driven Transport Planning Hackathon",
     "section": "Agenda (Monday 18th May)",
     "text": "Agenda (Monday 18th May)\n\n\n\nTime\nActivity\n\n\n\n\n14:00 - 14:45\nGetting started with the data and challenge\n\n\n14:45 - 15:00\nBreak\n\n\n15:00 - 16:30\nHackathon Session\n\n\n16:30 - 17:00\nPresentation of results\n\n\n\nSee the Prerequisites page to get ready!"
-  },
-  {
-    "objectID": "prerequisites.html",
-    "href": "prerequisites.html",
-    "title": "Prerequisites",
-    "section": "",
-    "text": "To make the most of the hackathon, please complete these steps before we begin at 14:00 on Monday 18th May."
-  },
-  {
-    "objectID": "prerequisites.html#create-a-github-account",
-    "href": "prerequisites.html#create-a-github-account",
-    "title": "Prerequisites",
-    "section": "1. Create a GitHub Account",
-    "text": "1. Create a GitHub Account\nIf you don’t have one already, sign up at github.com. You will use this to share your code and presentations."
-  },
-  {
-    "objectID": "prerequisites.html#software-installation",
-    "href": "prerequisites.html#software-installation",
-    "title": "Prerequisites",
-    "section": "2. Software installation",
-    "text": "2. Software installation\nWe recommend one of the following setups:\n\nOption A: Local R Environment (Recommended for spatial analysis)\n\nR: Download R\nRStudio: Download RStudio Desktop\nKey Packages: Run the following in your R console:\ninstall.packages(c(\"sf\", \"tidyverse\", \"tmap\", \"stplanr\", \"od\"))\n\n\n\nOption B: Local Python Environment\n\nPython 3.10+\nKey Libraries:\npip install geopandas pandas matplotlib leafmap osmnx\n\n\n\nOption C: Cloud-Based (No installation required)\n\nGitHub Codespaces: We will provide a template repository that you can launch in your browser. Note: Using Codespaces requires a GitHub account.\nPosit Cloud: Great for R users who don’t want to install software locally.\n\n\n\nOption D: Other Tools\nFeel free to use any tools you are comfortable with (e.g., QGIS, Tableau, JavaScript libraries). Just make sure you can share your work in a reproducible way."
-  },
-  {
-    "objectID": "prerequisites.html#data-access",
-    "href": "prerequisites.html#data-access",
-    "title": "Prerequisites",
-    "section": "3. Data Access",
-    "text": "3. Data Access\nYou can preview and download the core datasets from the PCTNI project repository.\nSpecifically, try downloading: - zones_sdz.gpkg - od_ni_open_filtered.csv"
-  },
-  {
-    "objectID": "prerequisites.html#familiarise-yourself",
-    "href": "prerequisites.html#familiarise-yourself",
-    "title": "Prerequisites",
-    "section": "4. Familiarise Yourself",
-    "text": "4. Familiarise Yourself\nTake a look at the Propensity to Cycle Tool (PCT) and the PCTNI project to understand the types of questions we are trying to answer."
   },
   {
     "objectID": "ideas.html",
@@ -166,5 +173,40 @@
     "title": "Exercises",
     "section": "Working with the Scripts",
     "text": "Working with the Scripts\nWe recommend opening these scripts in RStudio. You may need to install the following packages first:\ninstall.packages(c(\"sf\", \"tidyverse\", \"tmap\", \"stplanr\", \"od\"))"
+  },
+  {
+    "objectID": "prerequisites.html",
+    "href": "prerequisites.html",
+    "title": "Prerequisites",
+    "section": "",
+    "text": "To make the most of the hackathon, please complete these steps before we begin at 14:00 on Monday 18th May."
+  },
+  {
+    "objectID": "prerequisites.html#create-a-github-account",
+    "href": "prerequisites.html#create-a-github-account",
+    "title": "Prerequisites",
+    "section": "1. Create a GitHub Account",
+    "text": "1. Create a GitHub Account\nIf you don’t have one already, sign up at github.com. You will use this to share your code and presentations."
+  },
+  {
+    "objectID": "prerequisites.html#software-installation",
+    "href": "prerequisites.html#software-installation",
+    "title": "Prerequisites",
+    "section": "2. Software installation",
+    "text": "2. Software installation\nWe recommend one of the following setups:\n\nOption A: Local R Environment (Recommended for spatial analysis)\n\nR: Download R\nRStudio: Download RStudio Desktop\nKey Packages: Run the following in your R console:\ninstall.packages(c(\"sf\", \"tidyverse\", \"tmap\", \"stplanr\", \"od\"))\n\n\n\nOption B: Local Python Environment\n\nPython 3.10+\nKey Libraries:\npip install geopandas pandas matplotlib leafmap osmnx\n\n\n\nOption C: Cloud-Based (No installation required)\n\nGitHub Codespaces: We will provide a template repository that you can launch in your browser. Note: Using Codespaces requires a GitHub account.\nPosit Cloud: Great for R users who don’t want to install software locally.\n\n\n\nOption D: Other Tools\nFeel free to use any tools you are comfortable with (e.g., QGIS, Tableau, JavaScript libraries). Just make sure you can share your work in a reproducible way."
+  },
+  {
+    "objectID": "prerequisites.html#data-access",
+    "href": "prerequisites.html#data-access",
+    "title": "Prerequisites",
+    "section": "3. Data Access",
+    "text": "3. Data Access\nYou can preview and download the core datasets from the PCTNI project repository.\nSpecifically, try downloading: - zones_sdz.gpkg - od_ni_open_filtered.csv"
+  },
+  {
+    "objectID": "prerequisites.html#familiarise-yourself",
+    "href": "prerequisites.html#familiarise-yourself",
+    "title": "Prerequisites",
+    "section": "4. Familiarise Yourself",
+    "text": "4. Familiarise Yourself\nTake a look at the Propensity to Cycle Tool (PCT) and the PCTNI project to understand the types of questions we are trying to answer."
   }
 ]
