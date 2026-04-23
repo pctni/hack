@@ -9,6 +9,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: ideas.qmd
+        text: Ideas
       - href: prerequisites.qmd
         text: Prerequisites
       - href: exercises/index.qmd
