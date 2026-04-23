@@ -1,0 +1,70 @@
+---
+title: "Examples"
+---
+
+This page provides examples of how to load and visualize the hackathon datasets using R.
+
+## Setup
+
+First, load the necessary libraries:
+
+```{r}
+#| message: false
+library(sf)
+library(tidyverse)
+library(tmap)
+```
+
+## Loading Data
+
+We will load the Super Data Zones (SDZ) and the filtered Origin-Destination (OD) data.
+
+```{r}
+#| message: false
+# Ensure the data directory exists and contains the files
+zones = read_sf("data/zones_sdz.gpkg")
+od = read_csv("data/od_ni_open_filtered.csv")
+```
+
+## Visualizing Zones
+
+Let's take a look at the Super Data Zones:
+
+```{r}
+qtm(zones)
+```
+
+## Analysing Commuting Flows
+
+We can join the OD data to the zones to see which areas are the most popular destinations for commuters.
+
+```{r}
+# Aggregate total commuters by destination zone
+dest_counts = od |> 
+  group_by(workplace_area_code) |> 
+  summarise(total_commuters = sum(count, na.rm = TRUE))
+
+# Join back to zones
+zones_joined = zones |> 
+  left_join(dest_counts, by = c("sdz2021_cd" = "workplace_area_code"))
+
+# Map the results
+tm_shape(zones_joined) +
+  tm_polygons("total_commuters", 
+              style = "quantile", 
+              title = "Total Commuters (Destination)",
+              palette = "Viridis") +
+  tm_layout(main.title = "Commuting Destinations in NI",
+            frame = FALSE)
+```
+
+## Route Networks
+
+Finally, let's visualize a snippet of the fastest route network.
+
+```{r}
+#| message: false
+# Loading a subset for faster rendering
+route_network = read_sf("data/route_network_fastest.gpkg")
+qtm(head(route_network, 1000))
+```

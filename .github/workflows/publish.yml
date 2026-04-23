@@ -8,18 +8,31 @@ name: Render and Publish
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/itsleeds/tds
     permissions:
       contents: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
+      - name: Download Data from Release
+        run: |
+          mkdir -p data
+          curl -L -o data/zones_sdz.gpkg https://github.com/pctni/hack/releases/download/v0.1.0/zones_sdz.gpkg
+          curl -L -o data/od_ni_open_filtered.csv https://github.com/pctni/hack/releases/download/v0.1.0/od_ni_open_filtered.csv
+          curl -L -o data/route_network_fastest.gpkg https://github.com/pctni/hack/releases/download/v0.1.0/route_network_fastest.gpkg
+
+      - name: Config git
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
 
       - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
+        run: |
+          quarto publish gh-pages --no-browser
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

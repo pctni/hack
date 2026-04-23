@@ -11,6 +11,8 @@ website:
         text: Home
       - href: ideas.qmd
         text: Ideas
+      - href: examples.qmd
+        text: Examples
       - href: prerequisites.qmd
         text: Prerequisites
       - href: exercises/index.qmd
