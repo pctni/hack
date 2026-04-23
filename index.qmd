@@ -55,6 +55,11 @@ The following files contain high-resolution route segments, available in both Ge
 - **Fastest Segments**: [Aug 2025](https://github.com/pctni/hack/releases/download/v0.1.0/segments_fastest_2025-08.gpkg), [18 Aug 2025](https://github.com/pctni/hack/releases/download/v0.1.0/segments_fastest_2025-08-18.gpkg), [19 Aug 2025](https://github.com/pctni/hack/releases/download/v0.1.0/segments_fastest_2025-08-19.gpkg).
 - **Quietest Segments**: [Aug 2025](https://github.com/pctni/hack/releases/download/v0.1.0/segments_quietest_2025-08.gpkg), [18 Aug 2025](https://github.com/pctni/hack/releases/download/v0.1.0/segments_quietest_2025-08-18.gpkg), [19 Aug 2025](https://github.com/pctni/hack/releases/download/v0.1.0/segments_quietest_2025-08-19.gpkg).
 
+## Registration
+
+If you haven't already, please sign up for the event using the following form:
+**[Hackathon Sign-up Form](https://docs.google.com/forms/d/1CfpigdYH3gLYhoaKraBhDYpmKS1PKefxarIFjp9loME/viewform?edit_requested=true)**
+
 ## Pre-event homework
 
 To get a head start, we recommend that you try **importing and visualising** the [Core Hackathon Datasets](#core-hackathon-datasets) before the event. This will help you familiarise yourself with the data structure and ensure your technical setup is working correctly.
