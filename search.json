@@ -11,7 +11,7 @@
     "href": "index.html#the-challenge",
     "title": "Data-Driven Transport Planning Hackathon",
     "section": "The Challenge",
-    "text": "The Challenge\nDevelop a tool, visualization, or analysis that addresses a transport planning problem. While we provide datasets from the PCTNI project, your hackathon project does not have to be focused on cycling.\nIdeas for inspiration: - High-resolution accessibility mapping. - Visualizing multimodal origin-destination flows. - Predicting the impact of new transport infrastructure. - Identifying gaps in existing data."
+    "text": "The Challenge\nDevelop a tool, visualization, or analysis that addresses a transport planning problem. While we provide datasets from the PCTNI project, your hackathon project does not have to be focused on cycling.\nIdeas for inspiration:\n\nHigh-resolution accessibility mapping.\nVisualizing multimodal origin-destination flows.\nPredicting the impact of new transport infrastructure.\nIdentifying gaps in existing data."
   },
   {
     "objectID": "index.html#external-datasets",
@@ -26,6 +26,13 @@
     "title": "Data-Driven Transport Planning Hackathon",
     "section": "PCTNI Hackathon Datasets",
     "text": "PCTNI Hackathon Datasets\nThese datasets are provided as part of the hackathon and can be downloaded from the v0.1.0 Release.\n\nGeography and Demand\n\nZones (SDZ 2021): 2021 Super Data Zones for Northern Ireland (zones_sdz.gpkg).\nOrigin-Destination (OD) Data: Filtered 2021 Census OD data for workplace destinations (od_ni_open_filtered.csv).\n\n\n\nRoute Networks\n\nFastest Route Network: Network representing the fastest routes (route_network_fastest.gpkg).\nQuietest Route Network: Network representing the quietest routes (route_network_quietest.gpkg).\nProcessed Cycle Network: A cleaned and processed version of the cycle network (cycle_net_processed.gpkg).\n\n\n\nHigh-Resolution Segments\nThe following files contain high-resolution route segments, available in both GeoPackage (.gpkg) and R Data (.Rds) formats: - Fastest Segments: Aug 2025, 18 Aug 2025, 19 Aug 2025. - Quietest Segments: Aug 2025, 18 Aug 2025, 19 Aug 2025."
+  },
+  {
+    "objectID": "index.html#pre-event-homework",
+    "href": "index.html#pre-event-homework",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "Pre-event homework",
+    "text": "Pre-event homework\nTo get a head start, we recommend that you try importing and visualising the Core Hackathon Datasets before the event. This will help you familiarise yourself with the data structure and ensure your technical setup is working correctly."
   },
   {
     "objectID": "index.html#participation",
