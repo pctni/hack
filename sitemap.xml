@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://pctni.github.io/hack/index.html</loc>
-    <lastmod>2026-04-23T14:21:42.205Z</lastmod>
-  </url>
-  <url>
     <loc>https://pctni.github.io/hack/prerequisites.html</loc>
-    <lastmod>2026-04-23T14:21:42.205Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pctni.github.io/hack/ideas.html</loc>
-    <lastmod>2026-04-23T14:21:42.205Z</lastmod>
+    <lastmod>2026-04-23T14:40:03.664Z</lastmod>
   </url>
   <url>
     <loc>https://pctni.github.io/hack/exercises/index.html</loc>
-    <lastmod>2026-04-23T14:21:42.205Z</lastmod>
+    <lastmod>2026-04-23T14:40:03.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pctni.github.io/hack/ideas.html</loc>
+    <lastmod>2026-04-23T14:40:03.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pctni.github.io/hack/index.html</loc>
+    <lastmod>2026-04-23T14:40:03.664Z</lastmod>
   </url>
 </urlset>

@@ -1,47 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Data-Driven Transport Planning Hackathon",
-    "section": "",
-    "text": "Welcome to the Data-Driven Transport Planning Hackathon!\nPresented by the team behind the Propensity to Cycle Tool for Northern Ireland (PCTNI), this afternoon session is an open-ended challenge to develop data analysis, visualisation, or prototype tool ideas that help make transport planning more data-driven."
-  },
-  {
-    "objectID": "index.html#the-challenge",
-    "href": "index.html#the-challenge",
-    "title": "Data-Driven Transport Planning Hackathon",
-    "section": "The Challenge",
-    "text": "The Challenge\nDevelop a tool, visualization, or analysis that addresses a transport planning problem. While we provide datasets from the PCTNI project, your hackathon project does not have to be focused on cycling.\nIdeas for inspiration: - High-resolution accessibility mapping. - Visualizing multimodal origin-destination flows. - Predicting the impact of new transport infrastructure. - Identifying gaps in existing data."
-  },
-  {
-    "objectID": "index.html#external-datasets",
-    "href": "index.html#external-datasets",
-    "title": "Data-Driven Transport Planning Hackathon",
-    "section": "External Datasets",
-    "text": "External Datasets\nSome suggestions for datasets:\nTranslink Bus Stops - Translink Bus Stop List - Dataset - Open Data NI\nPotholes (up to 2025) - Pothole Enquiries - Dataset - Open Data NI\nRailway Stations (population with a walk or drive distance) - Northern Ireland Railways Stations - Dataset - Open Data NI\nTraffic Count Data (up to 2023 but later is available) Northern Ireland Traffic Count Data - Dataset - Open Data NI\nRoad Traffic Collision Statistics – collision data can be linked to vehicle and casualty data (available 2013-2024) Police Recorded Injury Road Traffic Collision Statistics Northern Ireland 2024 - Dataset - Open Data NI\nCensus 2021 origin-destination place of work tables (UK) | Northern Ireland Statistics and Research Agency – for OD flows from 2021 census for NI – available at Census Data Zone."
-  },
-  {
-    "objectID": "index.html#core-hackathon-datasets",
-    "href": "index.html#core-hackathon-datasets",
-    "title": "Data-Driven Transport Planning Hackathon",
-    "section": "Core Hackathon Datasets",
-    "text": "Core Hackathon Datasets\nThese datasets are provided as part of the hackathon and can be downloaded from the v0.1.0 Release.\n\nGeography and Demand\n\nZones (SDZ 2021): 2021 Super Data Zones for Northern Ireland (zones_sdz.gpkg).\nOrigin-Destination (OD) Data: Filtered 2021 Census OD data for workplace destinations (od_ni_open_filtered.csv).\n\n\n\nRoute Networks\n\nFastest Route Network: Network representing the fastest routes (route_network_fastest.gpkg).\nQuietest Route Network: Network representing the quietest routes (route_network_quietest.gpkg).\nProcessed Cycle Network: A cleaned and processed version of the cycle network (cycle_net_processed.gpkg).\n\n\n\nHigh-Resolution Segments\nThe following files contain high-resolution route segments, available in both GeoPackage (.gpkg) and R Data (.Rds) formats: - Fastest Segments: Aug 2025, 18 Aug 2025, 19 Aug 2025. - Quietest Segments: Aug 2025, 18 Aug 2025, 19 Aug 2025."
-  },
-  {
-    "objectID": "index.html#participation",
-    "href": "index.html#participation",
-    "title": "Data-Driven Transport Planning Hackathon",
-    "section": "Participation",
-    "text": "Participation\n\nWork individually or in teams.\nUse any tools or languages (R, Python, JavaScript, etc.).\nFocus on reproducibility and clear communication."
-  },
-  {
-    "objectID": "index.html#agenda-monday-18th-may",
-    "href": "index.html#agenda-monday-18th-may",
-    "title": "Data-Driven Transport Planning Hackathon",
-    "section": "Agenda (Monday 18th May)",
-    "text": "Agenda (Monday 18th May)\n\n\n\nTime\nActivity\n\n\n\n\n14:00 - 14:45\nGetting started with the data and challenge\n\n\n14:45 - 15:00\nBreak\n\n\n15:00 - 16:30\nHackathon Session\n\n\n16:30 - 17:00\nPresentation of results\n\n\n\nSee the Prerequisites page to get ready!"
-  },
-  {
     "objectID": "prerequisites.html",
     "href": "prerequisites.html",
     "title": "Prerequisites",
@@ -77,69 +35,6 @@
     "text": "4. Familiarise Yourself\nTake a look at the Propensity to Cycle Tool (PCT) and the PCTNI project to understand the types of questions we are trying to answer."
   },
   {
-    "objectID": "ideas.html",
-    "href": "ideas.html",
-    "title": "Hackathon Ideas",
-    "section": "",
-    "text": "Welcome to the Hackathon Ideas page! Below are suggestions across multiple categories to inspire your project. Remember: your hackathon project does not have to be focused on cycling – these ideas can be adapted to any transport planning problem."
-  },
-  {
-    "objectID": "ideas.html#category-1-accessibility-network-analysis",
-    "href": "ideas.html#category-1-accessibility-network-analysis",
-    "title": "Hackathon Ideas",
-    "section": "Category 1: Accessibility & Network Analysis",
-    "text": "Category 1: Accessibility & Network Analysis\n\n1. Multi-Modal Accessibility Dashboard\nCombine bus stops, railway stations, and cycling routes to map accessibility to key destinations. Use Census OD data to identify areas with poor connectivity to employment centers.\n\nTools: R (sf/tmap) or Python (leafmap) for interactive visualization\nData: Zones, Bus Stops, Railway Stations, route networks\nKey Questions: Which areas lack access to jobs? How would new infrastructure improve connectivity?\n\n\n\n2. Last-Mile Connectivity Analyzer\nIdentify gaps between cycling routes and public transport hubs. Calculate walking distance from homes to nearest transit and cycling infrastructure.\n\nTools: sf + stplanr for network analysis\nData: Cycle networks, Bus Stops, Railway Stations, Zones\nKey Questions: Where do walking routes to transit fall short? What fills the last-mile gap?\n\n\n\n3. Accessibility Heat Maps by Travel Mode\nBuild raster surfaces showing 15/30-minute accessibility to employment/services by walking, cycling, or bus. Create an interactive tool showing how new infrastructure improves access.\n\nTools: Python (geopandas, rasterio) or R\nData: OD flows, zones, route networks\nKey Questions: Which communities are underserved? How does modal shift improve accessibility?"
-  },
-  {
-    "objectID": "ideas.html#category-2-origin-destination-demand-analysis",
-    "href": "ideas.html#category-2-origin-destination-demand-analysis",
-    "title": "Hackathon Ideas",
-    "section": "Category 2: Origin-Destination & Demand Analysis",
-    "text": "Category 2: Origin-Destination & Demand Analysis\n\n4. Commute Pattern Discovery Tool\nVisualize and analyze 2021 Census OD flows at different distance bands. Identify which origin-destination pairs would benefit most from cycling/transit infrastructure.\n\nTools: R (od package, tmap) or Python (folium/leafmap)\nData: od_ni_open_filtered.csv, zones_sdz.gpkg\nKey Questions: Where do most commutes happen? What distances dominate?\n\n\n\n5. Multimodal OD Flow Visualization\nCreate animated/interactive maps showing OD flows, with potential to estimate modal shift based on proximity to route networks.\n\nTools: JavaScript (D3.js, Mapbox), Python (folium), or Shiny/Streamlit\nData: OD, route networks, zones\nKey Questions: Which corridors could shift to active travel? What’s the realistic potential?\n\n\n\n6. Commute Mode Prediction Model\nBuild a classification model to predict which commuters might switch to cycling/transit based on distance, presence of route networks, and accessibility to employment hubs.\n\nTools: Python (scikit-learn, pandas) or R (caret, tidymodels)\nData: OD, route networks, zones\nKey Questions: Who are the “makeable” commuters for mode shift? What infrastructure would unlock them?"
-  },
-  {
-    "objectID": "ideas.html#category-3-infrastructure-planning-impact-assessment",
-    "href": "ideas.html#category-3-infrastructure-planning-impact-assessment",
-    "title": "Hackathon Ideas",
-    "section": "Category 3: Infrastructure Planning & Impact Assessment",
-    "text": "Category 3: Infrastructure Planning & Impact Assessment\n\n7. Pothole & Road Quality Impact Tool\nMap potholes against existing cycle routes and proposed connections. Calculate the percentage of route network affected by maintenance needs.\n\nTools: sf + tmap\nData: Pothole Enquiries, route networks, zones\nKey Questions: How does road condition affect route viability? What maintenance is needed first?\n\n\n\n8. Traffic Collision Risk Mapping\nOverlay collision statistics (2013-2024) on proposed cycling routes. Identify high-risk corridors for safer routing recommendations.\n\nTools: R or Python with spatial analysis\nData: Collision Statistics, route networks, zones\nKey Questions: Which routes are safest? Where do collisions cluster? How can design reduce risk?\n\n\n\n9. New Infrastructure Impact Simulator\nBuild a tool that estimates potential modal shift from a proposed new cycling/bus route. Use Census OD data to quantify who could benefit.\n\nTools: Shiny (R) or Streamlit (Python) for interactivity\nData: OD, route networks, zones\nKey Questions: What’s the user base for a new route? How many car trips could convert?\n\n\n\n10. Traffic Count Trend Analysis\nAnalyze existing traffic patterns (2023 data) to predict where new cycling/transit infrastructure could reduce vehicle traffic.\n\nTools: R (tidyverse, ggplot2) or Python (pandas, plotly)\nData: Traffic Count Data, zones\nKey Questions: Where is congestion worst? Which interventions offer most relief?"
-  },
-  {
-    "objectID": "ideas.html#category-4-data-gaps-quality-analysis",
-    "href": "ideas.html#category-4-data-gaps-quality-analysis",
-    "title": "Hackathon Ideas",
-    "section": "Category 4: Data Gaps & Quality Analysis",
-    "text": "Category 4: Data Gaps & Quality Analysis\n\n11. Open Data Gap Identifier\nAudit which areas have incomplete coverage in bus stops, railway stations, cycle routes, traffic monitoring, and pothole reporting. Create a “data completeness” heatmap.\n\nTools: sf + tmap visualization\nData: All external datasets\nKey Questions: Where is data sparse? What’s missing for better planning?\n\n\n\n12. Route Network Completeness Assessment\nCompare existing fastest/quietest routes against potential commute corridors (OD flows). Identify major commute routes not yet covered by route networks.\n\nTools: Network analysis (sf + stplanr)\nData: OD, route networks, zones\nKey Questions: Which commute corridors lack route coverage? Where are the biggest gaps?"
-  },
-  {
-    "objectID": "ideas.html#category-5-decision-support-tools",
-    "href": "ideas.html#category-5-decision-support-tools",
-    "title": "Hackathon Ideas",
-    "section": "Category 5: Decision Support Tools",
-    "text": "Category 5: Decision Support Tools\n\n13. Interactive Route Network Explorer\nBuild an app where planners can explore which segments carry the most demand (OD flows), are most vulnerable to potholes, and improve accessibility to key destinations.\n\nTools: Shiny (R), Streamlit (Python), or JavaScript frontend\nData: Segments, OD, Potholes, Zones\nKey Questions: Which routes matter most? What are the trade-offs?\n\n\n\n14. “Return on Investment” Calculator for Transport Infrastructure\nTool for transport planners to estimate how many people could benefit from a new route, accessibility gains, and cost-benefit scenarios.\n\nTools: Shiny/Streamlit with simple models\nData: OD, Zones, Route segments\nKey Questions: What’s the business case for infrastructure? Who benefits most?"
-  },
-  {
-    "objectID": "ideas.html#category-6-visualizations-communication",
-    "href": "ideas.html#category-6-visualizations-communication",
-    "title": "Hackathon Ideas",
-    "section": "Category 6: Visualizations & Communication",
-    "text": "Category 6: Visualizations & Communication\n\n15. Story Maps: Transport Planning Case Studies\nBuild compelling narratives using maps, charts, and data. Example: “How would the Ring of Belfast cycle network improve accessibility?”\n\nTools: Quarto + Interactive maps (leaflet/mapbox via R or Python)\nData: All available datasets\nKey Questions: What stories does the data tell? How can maps communicate impact?\n\n\n\n16. Before/After Infrastructure Impact Visualization\nSide-by-side maps showing accessibility/OD patterns before and after proposed infrastructure.\n\nTools: Mapbox GL, Deck.gl, or R Shiny\nData: Zones, OD, route networks\nKey Questions: What changes with new infrastructure? How visually compelling is the impact?"
-  },
-  {
-    "objectID": "ideas.html#quick-reference-guide-by-team-profile",
-    "href": "ideas.html#quick-reference-guide-by-team-profile",
-    "title": "Hackathon Ideas",
-    "section": "💡 Quick Reference Guide by Team Profile",
-    "text": "💡 Quick Reference Guide by Team Profile\n\n\n\n\n\n\n\n\nTeam Profile\nBest Ideas\nRecommended Tools\n\n\n\n\nData Science\n4, 6, 9, 14\nPython (pandas, scikit-learn, plotly/streamlit)\n\n\nGeospatial Specialists\n1, 2, 3, 7, 12\nR (sf, tmap, stplanr)\n\n\nWeb/UX Developers\n5, 13, 15, 16\nJavaScript (Mapbox, D3.js) + Python/R backend\n\n\nData Journalists\n4, 11, 15\nQuarto/Observable + lightweight visualization\n\n\nMixed Teams\n9, 10, 14\nShiny (R) or Streamlit (Python) for quick prototypes"
-  },
-  {
-    "objectID": "ideas.html#tips-for-success",
-    "href": "ideas.html#tips-for-success",
-    "title": "Hackathon Ideas",
-    "section": "🎯 Tips for Success",
-    "text": "🎯 Tips for Success\n\nStart Small: Pick one core visualization or analysis and iterate.\nTell a Story: Don’t just show data – explain what it means for transport planning.\nUse the Data: Leverage the provided datasets (zones, OD flows, route networks).\nIterate Fast: Use the 90-minute session to test, refine, and improve.\nDocument Clearly: Show your code, explain your assumptions, share results reproducibly.\n\nGood luck! 🚀"
-  },
-  {
     "objectID": "exercises/index.html",
     "href": "exercises/index.html",
     "title": "Exercises",
@@ -159,5 +54,110 @@
     "title": "Exercises",
     "section": "Working with the Scripts",
     "text": "Working with the Scripts\nWe recommend opening these scripts in RStudio. You may need to install the following packages first:\ninstall.packages(c(\"sf\", \"tidyverse\", \"tmap\", \"stplanr\", \"od\"))"
+  },
+  {
+    "objectID": "ideas.html",
+    "href": "ideas.html",
+    "title": "Hackathon Ideas",
+    "section": "",
+    "text": "Welcome to the Hackathon Ideas page! Below are suggestions across multiple categories to inspire your project. Remember: your hackathon project does not have to be focused on cycling – these ideas can be adapted to any transport planning problem."
+  },
+  {
+    "objectID": "ideas.html#category-1-accessibility-network-analysis",
+    "href": "ideas.html#category-1-accessibility-network-analysis",
+    "title": "Hackathon Ideas",
+    "section": "Category 1: Accessibility & Network Analysis",
+    "text": "Category 1: Accessibility & Network Analysis\n\n1. Multi-Modal Accessibility Dashboard\nCombine bus stops, railway stations, and cycling routes to map accessibility to key destinations. Use Census OD data to identify areas with poor connectivity to employment centers.\n\nTools: R (e.g. sf/tmap) or Python (e.g. leafmap) for interactive visualization\nData: Zones, Bus Stops, Railway Stations, route networks\nKey Questions: Which areas lack access to jobs? How would new infrastructure improve connectivity?\n\n\n\n2. Last-Mile Connectivity Analyzer\nIdentify gaps between cycling routes and public transport hubs. Calculate walking distance from homes to nearest transit and cycling infrastructure.\n\nData: Cycle networks, Bus Stops, Railway Stations, Zones\nKey Questions: Where do walking routes to transit fall short? What fills the last-mile gap?"
+  },
+  {
+    "objectID": "ideas.html#category-2-origin-destination-demand-analysis",
+    "href": "ideas.html#category-2-origin-destination-demand-analysis",
+    "title": "Hackathon Ideas",
+    "section": "Category 2: Origin-Destination & Demand Analysis",
+    "text": "Category 2: Origin-Destination & Demand Analysis\n\n3. Commute Pattern Discovery Tool\nVisualize and analyze Census OD flows at different distance bands. Identify which origin-destination pairs would benefit most from cycling/transit infrastructure.\n\nData: od_ni_open_filtered.csv, zones_sdz.gpkg\nKey Questions: Where do most commutes happen? What distances dominate?\n\n\n\n4. Multimodal OD Flow Visualization\nCreate animated/interactive maps showing OD flows, with potential to estimate modal shift based on proximity to route networks.\n\nTools: JavaScript (D3.js, Mapbox), Python (e.g. folium), or Shiny/Streamlit\nData: OD, route networks, zones\nKey Questions: Which corridors could shift to active travel? What’s the realistic potential?"
+  },
+  {
+    "objectID": "ideas.html#category-3-infrastructure-planning-impact-assessment",
+    "href": "ideas.html#category-3-infrastructure-planning-impact-assessment",
+    "title": "Hackathon Ideas",
+    "section": "Category 3: Infrastructure Planning & Impact Assessment",
+    "text": "Category 3: Infrastructure Planning & Impact Assessment\n\n5. Pothole & Road Quality Impact Tool\nMap potholes against existing cycle routes and proposed connections. Calculate the percentage of route network affected by maintenance needs.\n\nData: Pothole Enquiries, route networks, zones\nKey Questions: How does road condition affect route viability? What maintenance is needed first?\n\n\n\n6. Traffic Collision Risk Mapping\nOverlay collision statistics (2013-2024) on proposed cycling routes. Identify high-risk corridors for safer routing recommendations.\n\nTools: R or Python with spatial analysis\nData: Collision Statistics, route networks, zones\nKey Questions: Which routes are safest? Where do collisions cluster? How can design reduce risk?\n\n\n\n7. New Infrastructure Impact Simulator (advanced)\nWith reference to the app at npw.scot and the source code at github.com/nptscot/npw, try deploying a version of the tool to Northern Ireland or sketch out a design of a tool that estimates potential modal shift from a proposed new cycling/bus route. Use Census OD data to quantify who could benefit.\n\nData: OD, route networks, zones\nKey Questions: What’s the user base for a new route? How many car trips could convert?"
+  },
+  {
+    "objectID": "ideas.html#category-4-data-gaps-quality-analysis",
+    "href": "ideas.html#category-4-data-gaps-quality-analysis",
+    "title": "Hackathon Ideas",
+    "section": "Category 4: Data Gaps & Quality Analysis",
+    "text": "Category 4: Data Gaps & Quality Analysis\n\n8. Open Data Gap Identifier\nAudit which areas have incomplete coverage in bus stops, railway stations, cycle routes, traffic monitoring, and pothole reporting. Create a “data completeness” heatmap.\n\nData: All external datasets\nKey Questions: Where is data sparse? What’s missing for better planning?"
+  },
+  {
+    "objectID": "ideas.html#category-5-decision-support-tools",
+    "href": "ideas.html#category-5-decision-support-tools",
+    "title": "Hackathon Ideas",
+    "section": "Category 5: Decision Support Tools",
+    "text": "Category 5: Decision Support Tools\n\n9. Exploring the results in the PCTNI.org web application\nExplore the data presented in the PCTNI.org web application and explore either the policy implications or identify potential improvements to the user experience, visualisation, or data presentation. This could be a quick win for the hackathon and a chance to contribute directly to the project and prioritisation of investment."
+  },
+  {
+    "objectID": "ideas.html#category-6-visualizations-communication",
+    "href": "ideas.html#category-6-visualizations-communication",
+    "title": "Hackathon Ideas",
+    "section": "Category 6: Visualizations & Communication",
+    "text": "Category 6: Visualizations & Communication\n\n10. Before/After Infrastructure Impact Visualization\nUsing the Ohsome API, create a visualization that shows how the cycle network has evolved over time in a specific area. This could be a compelling way to communicate the impact of infrastructure investment."
+  },
+  {
+    "objectID": "ideas.html#quick-reference-guide-by-team-profile",
+    "href": "ideas.html#quick-reference-guide-by-team-profile",
+    "title": "Hackathon Ideas",
+    "section": "💡 Quick Reference Guide by Team Profile",
+    "text": "💡 Quick Reference Guide by Team Profile\n\n\n\n\n\n\n\n\nTeam Profile\nBest Ideas\nRecommended Tools\n\n\n\n\nData Science\n3, 7, 9\nPython (pandas, scikit-learn, plotly/streamlit)\n\n\nGeospatial Specialists\n1, 2, 5, 8\nR (sf, tmap, stplanr)\n\n\nWeb/UX Developers\n4, 9, 10\nJavaScript (Mapbox, D3.js) + Python/R backend\n\n\nData Journalists\n3, 8, 10\nQuarto/Observable + lightweight visualization\n\n\nMixed Teams\n7, 9\nShiny (R) or Streamlit (Python) for quick prototypes"
+  },
+  {
+    "objectID": "ideas.html#tips-for-success",
+    "href": "ideas.html#tips-for-success",
+    "title": "Hackathon Ideas",
+    "section": "🎯 Tips for Success",
+    "text": "🎯 Tips for Success\n\nStart Small: Pick one core visualization or analysis and iterate.\nTell a Story: Don’t just show data – explain what it means for transport planning.\nUse the Data: Leverage the provided datasets (zones, OD flows, route networks).\nIterate Fast: Use the 90-minute session to test, refine, and improve.\nDocument Clearly: Show your code, explain your assumptions, share results reproducibly.\n\nGood luck! 🚀"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "",
+    "text": "Welcome to the Data-Driven Transport Planning Hackathon!\nPresented by the team behind the Propensity to Cycle Tool for Northern Ireland (PCTNI), this afternoon session is an open-ended challenge to develop data analysis, visualisation, or prototype tool ideas that help make transport planning more data-driven."
+  },
+  {
+    "objectID": "index.html#the-challenge",
+    "href": "index.html#the-challenge",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "The Challenge",
+    "text": "The Challenge\nDevelop a tool, visualization, or analysis that addresses a transport planning problem. While we provide datasets from the PCTNI project, your hackathon project does not have to be focused on cycling.\nIdeas for inspiration: - High-resolution accessibility mapping. - Visualizing multimodal origin-destination flows. - Predicting the impact of new transport infrastructure. - Identifying gaps in existing data."
+  },
+  {
+    "objectID": "index.html#external-datasets",
+    "href": "index.html#external-datasets",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "External Datasets",
+    "text": "External Datasets\nSome suggestions for datasets:\nTranslink Bus Stops - Translink Bus Stop List - Dataset - Open Data NI\nPotholes (up to 2025) - Pothole Enquiries - Dataset - Open Data NI\nRailway Stations (population with a walk or drive distance) - Northern Ireland Railways Stations - Dataset - Open Data NI\nTraffic Count Data (up to 2023 but later is available) Northern Ireland Traffic Count Data - Dataset - Open Data NI\nRoad Traffic Collision Statistics – collision data can be linked to vehicle and casualty data (available 2013-2024) Police Recorded Injury Road Traffic Collision Statistics Northern Ireland 2024 - Dataset - Open Data NI\nCensus 2021 origin-destination place of work tables (UK) | Northern Ireland Statistics and Research Agency – for OD flows from 2021 census for NI – available at Census Data Zone."
+  },
+  {
+    "objectID": "index.html#pctni-hackathon-datasets",
+    "href": "index.html#pctni-hackathon-datasets",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "PCTNI Hackathon Datasets",
+    "text": "PCTNI Hackathon Datasets\nThese datasets are provided as part of the hackathon and can be downloaded from the v0.1.0 Release.\n\nGeography and Demand\n\nZones (SDZ 2021): 2021 Super Data Zones for Northern Ireland (zones_sdz.gpkg).\nOrigin-Destination (OD) Data: Filtered 2021 Census OD data for workplace destinations (od_ni_open_filtered.csv).\n\n\n\nRoute Networks\n\nFastest Route Network: Network representing the fastest routes (route_network_fastest.gpkg).\nQuietest Route Network: Network representing the quietest routes (route_network_quietest.gpkg).\nProcessed Cycle Network: A cleaned and processed version of the cycle network (cycle_net_processed.gpkg).\n\n\n\nHigh-Resolution Segments\nThe following files contain high-resolution route segments, available in both GeoPackage (.gpkg) and R Data (.Rds) formats: - Fastest Segments: Aug 2025, 18 Aug 2025, 19 Aug 2025. - Quietest Segments: Aug 2025, 18 Aug 2025, 19 Aug 2025."
+  },
+  {
+    "objectID": "index.html#participation",
+    "href": "index.html#participation",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "Participation",
+    "text": "Participation\n\nWork individually or in teams.\nUse any tools or languages (R, Python, JavaScript, etc.).\nFocus on reproducibility and clear communication."
+  },
+  {
+    "objectID": "index.html#agenda-monday-18th-may",
+    "href": "index.html#agenda-monday-18th-may",
+    "title": "Data-Driven Transport Planning Hackathon",
+    "section": "Agenda (Monday 18th May)",
+    "text": "Agenda (Monday 18th May)\n\n\n\nTime\nActivity\n\n\n\n\n14:00 - 14:45\nGetting started with the data and challenge\n\n\n14:45 - 15:00\nBreak\n\n\n15:00 - 16:30\nHackathon Session\n\n\n16:30 - 17:00\nPresentation of results\n\n\n\nSee the Prerequisites page to get ready!"
   }
 ]
