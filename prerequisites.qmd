@@ -7,7 +7,7 @@ To make the most of the hackathon, please complete these steps before we begin a
 ## 1. Create a GitHub Account
 If you don't have one already, sign up at [github.com](https://github.com). You will use this to share your code and presentations.
 
-## 2. Technical Setup
+## 2. Software installation
 
 We recommend one of the following setups:
 
@@ -15,6 +15,7 @@ We recommend one of the following setups:
 - **R**: [Download R](https://cran.r-project.org/)
 - **RStudio**: [Download RStudio Desktop](https://posit.co/download/rstudio-desktop/)
 - **Key Packages**: Run the following in your R console:
+
   ```r
   install.packages(c("sf", "tidyverse", "tmap", "stplanr", "od"))
   ```
@@ -27,8 +28,12 @@ We recommend one of the following setups:
   ```
 
 ### Option C: Cloud-Based (No installation required)
-- **[GitHub Codespaces](https://github.com/codespaces)**: We will provide a template repository that you can launch in your browser. Note: Using Codespaces requires a **[GitHub account](https://github.com/signup)**.
+- **[GitHub Codespaces](https://github.com/codespaces/new?repo=pctni/hack)**: We will provide a template repository that you can launch in your browser. Note: Using Codespaces requires a **[GitHub account](https://github.com/signup)**.
 - **Posit Cloud**: Great for R users who don't want to install software locally.
+
+### Option D: Other Tools
+
+Feel free to use any tools you are comfortable with (e.g., QGIS, Tableau, JavaScript libraries). Just make sure you can share your work in a reproducible way.
 
 ## 3. Data Access
 You can preview and download the core datasets from the [PCTNI project repository](https://github.com/george-oakman/pctni).
