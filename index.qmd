@@ -78,11 +78,12 @@ To get a head start, we recommend that you try **importing and visualising** the
 
 ## Agenda (Monday 18th May)
 
-| Time          | Activity                                    |
-|---------------|---------------------------------------------|
-| 14:00 - 14:45 | Getting started with the data and challenge |
-| 14:45 - 15:00 | Break                                       |
-| 15:00 - 16:30 | **Hackathon Session**                       |
-| 16:30 - 17:00 | Presentation of results                     |
+| Time          | Activity                                                        |
+|---------------|-----------------------------------------------------------------|
+| 14:00 - 14:30 | Introduction to event and data in transport planning            |
+| 14:30 - 15:00 | Tour of active travel datasets (using the Route Appraisal Tool) |
+| 15:00 - 15:30 | Tour of public transit datasets (using Podaris)                 |
+| 15:30 - 16:00 | Open discussion                                                 |
+| 16:00 - 17:00 | Hackathon session                                               |
 
 See the [Prerequisites](prerequisites.qmd) page to get ready!
